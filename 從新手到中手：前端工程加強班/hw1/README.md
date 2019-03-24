@@ -16,11 +16,33 @@
 ## 自我練習
 
 1. 請問 CSS 的屬性`position`有哪幾種值？
+static、 relative、fixed、absolute、sticky
+
 2. 承上，請問那幾種值有哪些區別？請講出適合應用的地方。
+* static: 不會被特別指定頁面上的位置，依照瀏覽器預設配置自動排版在頁面上。
+* relaive: 將元素內top、right、bottom、left屬性的元素，相對調整位置
+* fixed: 固定在瀏覽器視窗的某個位置，可以使用top、right、left、bottom，設定它的位置。
+* absolute: 浮動位置定位在上層容器的相對位置，如果上層沒有可以定位的元素，則以body當作定位容器。
+* sticky: 當滾輪滾到設定sticky區塊時，會將該元素固定位置。
+
 3. `display`的三個值`inline`, `block`, `inline-block`有什麼異同？可以試著舉出幾個例子嗎？
+* inline 不會獨佔一行，多個相鄰inline屬性會排列同一行，任何固定區塊大小屬性無法使用(width、height)
+* block 代表元素會以區塊方式呈現，可以設定高寬度。
+* inline-block 同時具備inline和block屬性，可以將區塊水平顯示。
+
 4. 有哪些 HTML 元素是 `inline`, 哪些是 `block`？
+* inline <a>、<span>、<b>、<i>、<img>、<ifame>
+* block <div>、<p>、<h1>、<ul>、<li>
+
 5. 當我設定一個元素的`width`為`300px`，並且`padding`設成`10px`之後，這個元素的寬度應該會是多少？
+300+10(左)+10(右) = 320
+
 6. 這次實作的畫面當頻道名稱字太多的時候，會超出一格的大小或者會直接被卡掉，有沒有辦法讓字太多的時候在尾巴顯示`...`？例如原本名稱叫做：「1234567」，顯示的時候變成：「12345...」？
+p {
+    white-space: nowrap; /* no newline */
+    overflow: hidden; /* crop text */
+    text-overflow: ellipsis; /* ... */
+}
 
 ## 進階閱讀
 
