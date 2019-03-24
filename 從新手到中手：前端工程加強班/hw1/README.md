@@ -31,8 +31,8 @@ static、 relative、fixed、absolute、sticky
 * inline-block 同時具備inline和block屬性，可以將區塊水平顯示。
 
 4. 有哪些 HTML 元素是 `inline`, 哪些是 `block`？
-* inline <a>、<span>、<b>、<i>、<img>、<ifame>
-* block <div>、<p>、<h1>、<ul>、<li>
+* inline a、span、b、i、img、ifamed
+* block div、p、h1、ul、li
 
 5. 當我設定一個元素的`width`為`300px`，並且`padding`設成`10px`之後，這個元素的寬度應該會是多少？
 300+10(左)+10(右) = 320
